@@ -1,5 +1,7 @@
 import pymongo
 
+# this is assignment #9 in ADSD Spring 2022
+
 client = pymongo.MongoClient("mongodb+srv://new_user:new_password@soliton.zk5ax.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 
 db = client.sample_restaurants
