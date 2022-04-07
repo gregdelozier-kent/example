@@ -12,13 +12,12 @@ jobs:
       - name: checkout files from repo
         uses: actions/checkout@v2
 
-      - name: demo shell commands
+      - name: set up packages
         run: | 
-          echo "Hello!"
-          pwd
-          ls -la
+          echo pip3 install pytest
+          pip3 install pytest
 
-      - name: demo a second step
+      - name: run tests
         run: 
-          echo "Are you still here?"
-          python --version
+          echo pytest test_parser.py
+          pytest test_parser.py
