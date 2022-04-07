@@ -19,3 +19,5 @@ print(restaurants.find_one())
 
 for result in restaurants.find({},{'_id':0, 'name':1, 'borough':1})[0:100]:
     print(result)
+
+print("finished")
